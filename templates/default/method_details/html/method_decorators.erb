@@ -1,0 +1,28 @@
+<% if object[:method_decorators] %>
+<div class="tags">
+  <h4>Method Decorators:</h4>
+  <ul class="decorators">
+    <% for decorator in object[:method_decorators] %>
+      <li><%= decorator[:name] %>
+        <div class="source_code">
+          <table>
+            <tr>
+              <td>
+                <pre class="lines">
+
+
+<%= decorator[:source].split("\n").size.times.to_a.map {|i| decorator[:line] + i }.join("\n") %></pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File '<%= h decorator[:file] %>', line <%= decorator[:line] %></span>
+
+<%= html_syntax_highlight format_source(decorator[:source]) %></pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
