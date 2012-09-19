@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "yard-method-decorators"
   gem.require_paths = ["lib"]
-  gem.version       = Yard::Method::Decorators::VERSION
+  gem.version       = YARD::MethodDecorators::VERSION
   gem.add_dependency 'yard'
   gem.add_dependency 'method_decorators'
   gem.add_development_dependency 'rspec'

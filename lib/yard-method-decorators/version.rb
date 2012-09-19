@@ -1,3 +1,5 @@
-module YARD::MethodDecorators
-  VERSION = "0.0.1"
+module YARD
+  module MethodDecorators
+    VERSION = "0.0.1"
+  end
 end
