@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "yard-method-decorators"
   gem.require_paths = ["lib"]
   gem.version       = Yard::Method::Decorators::VERSION
+  gem.add_dependency 'yard'
+  gem.add_dependency 'method_decorators'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'rspec-given'
 end
