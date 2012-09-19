@@ -2,11 +2,15 @@
 require File.expand_path('../lib/yard-method-decorators/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Jeremy Friesen"]
-  gem.email         = ["jeremy.n.friesen@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.authors       = [
+    "Jeremy Friesen",
+  ]
+  gem.email         = [
+    "jeremy.n.friesen@gmail.com",
+  ]
+  gem.description   = %q{Captures MethodDecorators in YARD}
+  gem.summary       = %q{Captures MethodDecorators in YARD}
+  gem.homepage      = "http://github.com/jeremyf/yard-method-decorators"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

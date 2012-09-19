@@ -1,6 +1,7 @@
-# Yard::Method::Decorators
+# Yard::MethodDecorators
 
-TODO: Write a gem description
+A YARD plugin for the
+[method decorators gem](http://rubygems.org/gems/method_decorators).
 
 ## Installation
 
@@ -18,7 +19,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ yardoc -p templates_custom \
+      -e lib/yard-method-decorators.rb example/example_code.rb
 
 ## Contributing
 
